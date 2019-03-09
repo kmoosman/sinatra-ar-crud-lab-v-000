@@ -26,7 +26,7 @@ class ApplicationController < Sinatra::Base
   post '/articles' do
     article = Article.create(title: params[:article_title], content: params[:article_content])
     article.save
-    # binding.pry
+    binding.pry
     redirect to "/articles/#{article.id}"
     erb :index
 
