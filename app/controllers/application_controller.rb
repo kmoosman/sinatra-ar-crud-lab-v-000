@@ -22,6 +22,7 @@ class ApplicationController < Sinatra::Base
     article.save
     # binding.pry
     redirect to "/articles/#{article.id}"
+    erb :index
 
   end
 
