@@ -1,7 +1,7 @@
 <html>
   <p>Current title: <%= @article.title %> </p>
   <p>Current content: <%= @article.content %> </p>
-  <form method="POST" action="/article/1">
+  <form method="POST" action="/article/:id">
   <p>Article title: <input type="text" name="article_title" id="title"></p>
   <p>Article content: <textarea type="text" name="article_content" id="content"> </textarea></p>
   <p><input type="submit" value="submit"></p>
