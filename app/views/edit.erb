@@ -2,7 +2,7 @@
 
   <p>Current title: <%= @article.title %> </p>
   <p>Current content: <%= @article.content %> </p>
-  <form method="post" action="/article/:id">
+  <form method="post" action="/article/2">
   <p>Article title: <input type="text" name="article_title" id="title"></p>
   <p>Article content: <textarea type="text" name="article_content" id="content"> </textarea></p>
   <input id="hidden" type="hidden" name="_method" value="patch">
