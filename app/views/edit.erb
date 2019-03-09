@@ -1,6 +1,6 @@
 <html>
-  <p>Current article title: <%= @article.title %> </p>
-  <p>Current article content: <%= @article.content %> </p>
+  <h2>Current article title:</h2><span> <%= @article.title %> </span>
+  <h2>Current article content:</h2><span> <%= @article.content %> </span>
   <form method="POST" action="/articles/:id">
   <p>Article title: <input type="text" name="article_title" id="title"></p>
   <p>Article content: <textarea type="text" name="article_content" id="content"> </textarea></p>
